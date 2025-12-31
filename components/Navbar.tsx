@@ -14,10 +14,10 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/logo.svg"
+            src="/matesco_farms.png"
             alt="Matesco Farms Logo"
-            width={32}
-            height={32}
+            width={35}
+            height={35}
             priority
           />
           <span className="text-lg font-semibold">Matesco Farms</span>

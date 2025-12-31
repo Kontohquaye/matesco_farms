@@ -5,7 +5,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-black/50" />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto max-w-5xl px-6 text-center text-white">
+      <div className="relative z-10 mx-auto max-w-5xl px-6 text-center text-white py-2">
         <h1 className="text-4xl font-bold leading-tight md:text-6xl">
           Quality Mangoes, Grown the Right Way in Ghana
         </h1>
@@ -23,13 +23,13 @@ export default function HeroSection() {
         {/* CTA buttons */}
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="#about"
+            href="/about"
             className="rounded-full bg-yellow-400 px-8 py-3 font-semibold text-black hover:bg-yellow-300"
           >
             Learn About Our Farm
           </a>
           <a
-            href="/blogs"
+            href="/blog"
             className="rounded-full border border-white/70 px-8 py-3 font-semibold text-white hover:bg-white hover:text-black"
           >
             Farm Insights

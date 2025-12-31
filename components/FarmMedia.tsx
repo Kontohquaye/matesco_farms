@@ -11,7 +11,7 @@ export default function FarmVideo() {
         <div className="mb-8 text-center">
           <h2 className="text-3xl font-bold text-black">From the Farm</h2>
           <p className="mt-3 text-gray-600">
-            A glimpse into how we grow, harvest, and care for our mangoes.
+            A glimpse into how we harvest, and care for our mangoes.
           </p>
         </div>
 
