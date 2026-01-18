@@ -4,9 +4,6 @@ export const contact = defineType({
   name: "contact",
   title: "Contact",
   type: "document",
-
-  __experimental_actions: ["create", "delete"],
-
   fields: [
     defineField({
       name: "fullName",
