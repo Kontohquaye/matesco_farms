@@ -1,8 +1,9 @@
-import Image from "next/image";
+import DisplayBlogs from "@/components/BlogsComponent";
 import { fetchBlogs } from "../actions/sanity-service";
 import type { Blog } from "../types/blog";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
 
 export default async function BlogPage() {
   const blogs: Blog[] = await fetchBlogs();
@@ -21,46 +22,10 @@ export default async function BlogPage() {
         </header>
 
         {/* Blog List */}
-        {!blogs && <div className="mt-16 space-y-12 text-center" > No Blogs Yet</div>}
-        {blogs && 
-        <section className="mt-16 space-y-12">
-          {blogs.map((blog) => (
-            <article
-              key={blog._id}
-              className="flex flex-col sm:flex-row gap-6 border-b pb-12"
-            >
-              {/* Image */}
-              <div className="relative w-full sm:w-64 h-40 shrink-0 overflow-hidden rounded-lg bg-gray-100">
-                <Image
-                  src={blog.thumbnail}
-                  alt={blog.title}
-                  fill
-                  className="object-contain"
-                />
-              </div>
-
-              {/* Content */}
-              <div className="flex-1">
-                <p className="text-sm text-gray-500">{blog.read}</p>
-
-                <h2 className="mt-2 text-2xl font-semibold text-gray-900">
-                  {blog.title}
-                </h2>
-
-                <p className="mt-3 text-gray-600 line-clamp-3">{blog.body}</p>
-
-                <Link
-                  href={`blog/${blog._id}`}
-                  className="mt-4 inline-block text-green-700 font-medium hover:underline"
-                >
-                  <button className="">
-                    Read article <ArrowRight className="h-4 w-4 inline-block" />
-                  </button>
-                </Link>
-              </div>
-            </article>
-          ))}
-        </section>}
+        {!blogs && (
+          <div className="mt-16 space-y-12 text-center"> No Blogs Yet</div>
+        )}
+        {blogs && <DisplayBlogs blogs={blogs} />}
       </div>
     </main>
   );
