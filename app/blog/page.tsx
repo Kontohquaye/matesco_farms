@@ -21,6 +21,8 @@ export default async function BlogPage() {
         </header>
 
         {/* Blog List */}
+        {!blogs && <div className="mt-16 space-y-12 text-center" > No Blogs Yet</div>}
+        {blogs && 
         <section className="mt-16 space-y-12">
           {blogs.map((blog) => (
             <article
@@ -58,7 +60,7 @@ export default async function BlogPage() {
               </div>
             </article>
           ))}
-        </section>
+        </section>}
       </div>
     </main>
   );

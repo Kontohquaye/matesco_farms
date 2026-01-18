@@ -1,3 +1,5 @@
+import { submitContact } from "../actions/sanity-service.ts";
+
 export default function ContactPage() {
   return (
     <main className="bg-white">
@@ -32,8 +34,8 @@ export default function ContactPage() {
               info@matescofarms.com
             </p>
             <p>
-              <span className="font-medium text-gray-900">Phone:</span> +233 XX
-              XXX XXXX
+              <span className="font-medium text-gray-900">Phone:</span>{" "}
+              +233 (0)247632111 / (0)556114561 / (0)200943039
             </p>
             <p>
               <span className="font-medium text-gray-900">Address:</span>{" "}
@@ -48,13 +50,18 @@ export default function ContactPage() {
             Send Us a Message
           </h2>
 
-          <form className="mt-6 space-y-6 max-w-xl">
+          <form
+            action={submitContact}
+            className="mt-6 space-y-6 max-w-xl"
+          >
             <div>
               <label className="block text-sm font-medium text-gray-900">
                 Full Name
               </label>
               <input
+                name="name"
                 type="text"
+                required
                 className="mt-2 w-full rounded-md border border-gray-300 px-4 py-2 text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-600"
                 placeholder="Your name"
               />
@@ -65,7 +72,9 @@ export default function ContactPage() {
                 Email Address
               </label>
               <input
+                name="email"
                 type="email"
+                required
                 className="mt-2 w-full rounded-md border border-gray-300 px-4 py-2 text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-600"
                 placeholder="you@example.com"
               />
@@ -76,7 +85,9 @@ export default function ContactPage() {
                 Message
               </label>
               <textarea
+                name="message"
                 rows={5}
+                required
                 className="mt-2 w-full rounded-md border border-gray-300 px-4 py-2 text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-600"
                 placeholder="Tell us how we can help you"
               />

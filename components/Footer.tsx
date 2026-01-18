@@ -41,7 +41,7 @@ export default function Footer() {
               Somanya, Eastern Region, Ghana
             </p>
             <p className="text-white/80">Email: ncbnxbcnxxxx</p>
-            <p className="text-white/80">Phone: +233 XX XXX XXXX</p>
+            <p className="text-white/80">Phone: +233  (0)247632111/ (0)556114561/ (0)200943039</p>
           </div>
         </div>
 
