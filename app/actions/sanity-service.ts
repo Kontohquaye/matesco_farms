@@ -20,11 +20,7 @@ export async function fetchBlogById(id: string) {
 }
 
 // contact
-export async function submitContact(formData: {
-  name: string;
-  email: string;
-  message: string;
-}) {
+export async function submitContact(formData: FormData) {
   const name = String(formData.get("name") ?? "").trim();
 const email = String(formData.get("email") ?? "").trim();
 const message = String(formData.get("message") ?? "").trim();
