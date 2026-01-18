@@ -22,12 +22,12 @@ export async function fetchBlogById(id: string) {
 // contact
 export async function submitContact(formData: FormData) {
   const name = String(formData.get("name") ?? "").trim();
-const email = String(formData.get("email") ?? "").trim();
-const message = String(formData.get("message") ?? "").trim();
+  const email = String(formData.get("email") ?? "").trim();
+  const message = String(formData.get("message") ?? "").trim();
 
   // console.log(formData as string,{name,email,message})
 
-  if (name=="" || email=="" || message=="") {
+  if (name == "" || email == "" || message == "") {
     throw new Error("Missing fields");
   }
 
@@ -38,9 +38,8 @@ const message = String(formData.get("message") ?? "").trim();
     message,
   });
 
-  return { success: true };
+  // return { success: true };
 }
-
 
 export default fetchMedia;
 export { fetchBlogs };

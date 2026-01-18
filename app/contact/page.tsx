@@ -1,4 +1,4 @@
-import { submitContact } from "../actions/sanity-service.ts";
+import { submitContact } from "../actions/sanity-service";
 
 export default function ContactPage() {
   return (
@@ -34,8 +34,8 @@ export default function ContactPage() {
               info@matescofarms.com
             </p>
             <p>
-              <span className="font-medium text-gray-900">Phone:</span>{" "}
-              +233 (0)247632111 / (0)556114561 / (0)200943039
+              <span className="font-medium text-gray-900">Phone:</span> +233
+              (0)247632111 / (0)556114561 / (0)200943039
             </p>
             <p>
               <span className="font-medium text-gray-900">Address:</span>{" "}
@@ -50,10 +50,7 @@ export default function ContactPage() {
             Send Us a Message
           </h2>
 
-          <form
-            action={submitContact}
-            className="mt-6 space-y-6 max-w-xl"
-          >
+          <form action={submitContact} className="mt-6 space-y-6 max-w-xl">
             <div>
               <label className="block text-sm font-medium text-gray-900">
                 Full Name
