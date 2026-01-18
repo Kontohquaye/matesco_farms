@@ -1,5 +1,6 @@
 "use server";
 import { writeClient } from "@/sanity/lib/client";
+import { client } from "@/sanity/lib/client";
 import { blogById, blogsQuery, postsQuery } from "../queries/global";
 
 const fetchMedia = async () => {
