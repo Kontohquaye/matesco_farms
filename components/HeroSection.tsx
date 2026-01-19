@@ -1,7 +1,16 @@
 export default function HeroSection() {
   return (
-    <section className="relative w-full flex min-h-[80vh] items-center bg-green-950 max-w-screen">
-      {/* Optional overlay if you add a background image/video */}
+    <section className="relative flex min-h-[80vh] w-full items-center overflow-hidden">
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://files.edgestore.dev/9fafx9jpqygtarv1/MatescoFarms/_public/banner_matesco.jpg')",
+        }}
+      />
+
+      {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/50" />
 
       {/* Content */}
