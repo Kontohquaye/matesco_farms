@@ -44,7 +44,49 @@ export default async function BlogDetailsPage({ params }: PageProps) {
 
         {/* Markdown Body */}
         <div className="prose prose-lg max-w-none prose-green">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{blog.body}</ReactMarkdown>
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            components={{
+              a: ({ href, children }) => {
+                if (
+                  href &&
+                  /\.(mp4|mov|webm)$/i.test(href.replace(/\)$/, ""))
+                ) {
+                  const cleanHref = href.replace(/\)$/, "");
+
+                  const type = cleanHref.toLowerCase().endsWith(".mov")
+                    ? "video/quicktime"
+                    : cleanHref.toLowerCase().endsWith(".webm")
+                      ? "video/webm"
+                      : "video/mp4";
+
+                  return (
+                    <video
+                      controls
+                      playsInline
+                      preload="metadata"
+                      className="my-6 w-full max-h-[320px] rounded-lg object-contain bg-black"
+                    >
+                      <source src={cleanHref} type={type} />
+                    </video>
+                  );
+                }
+
+                return (
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-700 underline"
+                  >
+                    {children}
+                  </a>
+                );
+              },
+            }}
+          >
+            {blog.body}
+          </ReactMarkdown>
         </div>
 
         {/* Footer */}
