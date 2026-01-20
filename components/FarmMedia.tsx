@@ -1,6 +1,3 @@
-import Video from "next-video";
-import matesco from "/videos/hero_matesco.mp4";
-import getStarted from "/videos/get-started.mp4";
 import Player from "next-video/player";
 
 export default function FarmVideo() {

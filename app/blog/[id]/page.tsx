@@ -4,6 +4,7 @@ import remarkGfm from "remark-gfm";
 import { fetchBlogById } from "@/app/actions/sanity-service";
 import { ArrowRight } from "lucide-react";
 import NotFound from "@/components/NotFound";
+import Player from "next-video/player";
 
 type PageProps = {
   params: Promise<{ id: string }>;
@@ -61,14 +62,15 @@ export default async function BlogDetailsPage({ params }: PageProps) {
                       : "video/mp4";
 
                   return (
-                    <video
-                      controls
-                      playsInline
-                      preload="metadata"
-                      className="my-6 w-full max-h-[320px] rounded-lg object-contain bg-black"
-                    >
-                      <source src={cleanHref} type={type} />
-                    </video>
+                    <Player src={`${cleanHref}`} />
+                    // <video
+                    //   controls
+                    //   playsInline
+                    //   preload="metadata"
+                    //   className="my-6 w-full max-h-[320px] rounded-lg object-contain bg-black"
+                    // >
+                    //   <source src={cleanHref} type={type} />
+                    // </video>
                   );
                 }
 
