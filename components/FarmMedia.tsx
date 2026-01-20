@@ -14,7 +14,7 @@ export default function FarmVideo() {
 
         {/* Video */}
         <div className="relative aspect-video w-full overflow-hidden rounded-lg">
-          <Player src="https://files.edgestore.dev/9fafx9jpqygtarv1/MatescoFarms/_public/hero_matesco.MOV" />
+          <Player src="https://files.edgestore.dev/9fafx9jpqygtarv1/MatescoFarms/_public/0119%20.mp4" />
         </div>
       </div>
     </section>
