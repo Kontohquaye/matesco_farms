@@ -9,16 +9,17 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-green-700 text-white">
+    <nav className="w-full bg-green-950 text-white">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className="flex  items-center gap-3">
           <Image
             src="/matesco_farms.png"
             alt="Matesco Farms Logo"
             width={40}
             height={40}
             priority
+            className="bg-white rounded-full"
           />
           <span className="text-2xl font-bold">Matesco Farms</span>
         </Link>
