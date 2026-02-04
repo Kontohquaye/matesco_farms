@@ -1,19 +1,19 @@
 const partners = [
   {
     name: "Blue Skies Company Limited",
-    logo: "https://files.edgestore.dev/9fafx9jpqygtarv1/MatescoFarms/_public/blueskies.png",
+    logo: "https://files.edgestore.dev/310n8nblq7pq3vwb/myMatesco/_public/blueskies.png",
   },
   {
     name: "HPW Ghana",
-    logo: "https://files.edgestore.dev/9fafx9jpqygtarv1/MatescoFarms/_public/hpw.png",
+    logo: "https://files.edgestore.dev/310n8nblq7pq3vwb/myMatesco/_public/HPW-LOGO.jpg",
   },
   {
     name: "BOMART Company Limited",
-    logo: "https://files.edgestore.dev/9fafx9jpqygtarv1/MatescoFarms/_public/bomarts.png",
+    logo: "https://files.edgestore.dev/310n8nblq7pq3vwb/myMatesco/_public/bomartlogo.jpg",
   },
   {
     name: "Agropal Company Limited",
-    logo: "https://files.edgestore.dev/9fafx9jpqygtarv1/MatescoFarms/_public/AGROPAL-LOGO-1024x506.png",
+    logo: "https://files.edgestore.dev/310n8nblq7pq3vwb/myMatesco/_public/AGROPAL-LOGO.png",
   },
 ];
 

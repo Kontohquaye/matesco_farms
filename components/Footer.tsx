@@ -40,7 +40,7 @@ export default function Footer() {
             <p className="text-white/80 wrap-break-word">
               Somanya, Eastern Region, Ghana
             </p>
-            <p className="text-white/80">Email: info.matescofarms@gmail.com</p>
+            <p className="text-white/80">Email: info@matescofarms.com</p>
             <p className="text-white/80">
               Phone: +233 (0)247632111/ (0)556114561/ (0)200943039
             </p>

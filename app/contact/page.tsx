@@ -31,7 +31,7 @@ export default function ContactPage() {
           <div className="mt-4 space-y-2 text-gray-600 wrap-break-word">
             <p>
               <span className="font-medium text-gray-900">Email:</span>{" "}
-              info.matescofarms@gmail.com
+              info@matescofarms.com
             </p>
             <p>
               <span className="font-medium text-gray-900">Phone:</span> +233
