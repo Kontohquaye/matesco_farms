@@ -8,7 +8,7 @@ export default function AboutPage() {
             About Matesco Farms
           </h1>
           <p className="mt-4 text-lg text-gray-600 wrap-break-word">
-            A proudly Ghanaian mango farming company committed to quality,
+            A proud Ghanaian mango farming company committed to quality,
             sustainability, and community impact.
           </p>
         </header>
