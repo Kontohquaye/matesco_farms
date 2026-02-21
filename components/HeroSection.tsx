@@ -22,9 +22,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="mt-6 text-lg text-white/90 md:text-xl">
-          Matesco Farms is a proudly Ghanaian mango producer based in Somanya,
-          managing over 150 acres of mango farmland through sustainable,
-          quality-driven agricultural practices.
+          Based in Somanya, Matesco Farms is a Ghanaian mango producer that manages over 150 acres of mango farmland using sustainable and quality-focused agricultural practices
         </p>
 
         <p className="mt-4 text-sm uppercase tracking-wide text-white/70">
